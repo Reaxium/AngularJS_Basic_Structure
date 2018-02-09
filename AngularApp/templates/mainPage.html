@@ -1,0 +1,28 @@
+<div data-ng-if="!loading" class="smooth-enter">
+    <md-fab-toolbar md-open="demo.isOpen" count="demo.count" md-direction="{{demo.selectedDirection}}">
+        <md-fab-trigger class="align-with-text">
+            <md-button aria-label="menu" class="md-fab md-primary">
+                <md-icon md-svg-src="Content/img/icons/menu.svg"></md-icon>
+            </md-button>
+        </md-fab-trigger>
+
+        <md-toolbar>
+            <md-fab-actions class="md-toolbar-tools">
+                <h1>Basic AngularJS Structure</h1>
+                <md-button aria-label="home">
+                    Home
+                </md-button>
+                <md-button aria-label="about">
+                    About Us
+                </md-button>
+                <md-button aria-label="contact">
+                    Contact Us
+                </md-button>
+            </md-fab-actions>
+        </md-toolbar>
+
+    </md-fab-toolbar>
+</div>
+<div class="text-center centered" data-ng-if="loading">
+    <i class="fas fa-circle-notch fa-spin fa-5x"></i>
+</div>
